@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/name_user"
+        android:text="dfghdg"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:layout_marginLeft="6dp"
+        android:textSize="18dp"
+        android:text="dfghdg"
+        android:layout_width="wrap_content"
+        android:id="@+id/lastname_user"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:layout_marginLeft="18dp"
+        android:textSize="18dp"
+        android:text="dfghdg"
+        android:layout_width="wrap_content"
+        android:id="@+id/sum_user"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:layout_marginLeft="18dp"
+        android:textSize="18dp"
+        android:text="dfghdg"
+        android:layout_width="wrap_content"
+        android:id="@+id/balance_user"
+        android:layout_height="wrap_content"></TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/list_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="more" />
+    </RelativeLayout>
+
+</LinearLayout>

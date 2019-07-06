@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.proj">
 
-
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -11,9 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".AddRevenue"></activity>
+        <activity android:name=".EmployeeLogined" />
+        <activity android:name=".ChangePrice" />
+        <activity android:name=".Detail" />
 
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
 
-        <activity android:name=".ActivityPf"></activity>
+        <activity android:name=".AdminBoard" />
+        <activity android:name=".CreateAcc" />
+        <activity android:name=".ActivityPf" />
         <activity android:name=".MainActivityAcc" />
         <activity android:name=".MainActivityCreateProfile" />
         <activity android:name=".MainActivityLogined" />

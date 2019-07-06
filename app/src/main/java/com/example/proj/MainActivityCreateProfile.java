@@ -87,6 +87,7 @@ public class MainActivityCreateProfile extends AppCompatActivity {
             public void onClick(View view) {
                 final String First_name = Firstname.getText().toString();
                 final String Last_name = Lastname.getText().toString();
+
                 final String ID_Card = IDcard.getText().toString();
                 final String address = Address.getText().toString();
                 final String Phone_number = Phone.getText().toString();
@@ -102,13 +103,18 @@ public class MainActivityCreateProfile extends AppCompatActivity {
                 if (TextUtils.isEmpty(ID_Card)) {
                     Toast.makeText(MainActivityCreateProfile.this, "Please Enter IDcard.", Toast.LENGTH_SHORT).show();
                 }
+                if (ID_Card.length()== 12) {
+                    IDcard.setError("Enter a valid ID card.");
+                    IDcard.requestFocus();
+                    return;
+                }
                 if (TextUtils.isEmpty(address)) {
                     Toast.makeText(MainActivityCreateProfile.this, "Please Enter Address.", Toast.LENGTH_SHORT).show();
                 }
                 if (TextUtils.isEmpty(Phone_number)) {
                     Toast.makeText(MainActivityCreateProfile.this, "Please Enter Phone nume.", Toast.LENGTH_SHORT).show();
                 }
-                if (Phone_number.length() != 10) {
+                if (Phone_number.length() == 9) {
                     Phone.setError("Enter a valid phone number.");
                     Phone.requestFocus();
                     return;
